@@ -34,10 +34,10 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">Email Me</p>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:pravinkumar42001@gmail.com"
                     className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors"
                   >
-                    hello@example.com
+                    pravinkumar42001@gmail.com
                   </a>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors"
-                  placeholder="John Doe"
+                  placeholder="Enter your name  "
                 />
               </div>
               <div>
@@ -76,7 +76,7 @@ const Contact = () => {
                 <input
                   type="email"
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="Enter your email "
                 />
               </div>
               <div>
