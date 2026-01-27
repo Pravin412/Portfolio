@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Send } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Mail, Send } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -14,7 +13,8 @@ const Contact = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-zinc-600 dark:text-zinc-400">
-            Have a project in mind or just want to say hi? I'd love to hear from you.
+            Have a project in mind or just want to say hi? I'd love to hear from
+            you.
           </p>
         </motion.div>
 
@@ -33,15 +33,19 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email Me</p>
-                  <a href="mailto:hello@example.com" className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors">
+                  <a
+                    href="mailto:hello@example.com"
+                    className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors"
+                  >
                     hello@example.com
                   </a>
                 </div>
               </div>
-              
+
               <div className="bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800">
                 <p className="text-zinc-600 dark:text-zinc-400 italic">
-                  "I'm currently available for freelance work and open to full-time opportunities."
+                  "I'm currently available for freelance work and open to
+                  full-time opportunities."
                 </p>
               </div>
             </div>
@@ -56,31 +60,37 @@ const Contact = () => {
           >
             <form className="space-y-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-700 dark:text-zinc-300">Name</label>
-                <input 
-                  type="text" 
+                <label className="block text-sm font-medium mb-1 text-zinc-700 dark:text-zinc-300">
+                  Name
+                </label>
+                <input
+                  type="text"
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors"
                   placeholder="John Doe"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-700 dark:text-zinc-300">Email</label>
-                <input 
-                  type="email" 
+                <label className="block text-sm font-medium mb-1 text-zinc-700 dark:text-zinc-300">
+                  Email
+                </label>
+                <input
+                  type="email"
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors"
                   placeholder="john@example.com"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-700 dark:text-zinc-300">Message</label>
-                <textarea 
+                <label className="block text-sm font-medium mb-1 text-zinc-700 dark:text-zinc-300">
+                  Message
+                </label>
+                <textarea
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors resize-none"
                   placeholder="Tell me about your project..."
                 ></textarea>
               </div>
-              <button 
-                type="button" 
+              <button
+                type="button"
                 className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
               >
                 Send Message <Send size={18} />

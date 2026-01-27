@@ -1,10 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const skills = [
-  { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Next.js"] },
-  { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "Firebase", "Redis"] },
-  { category: "Tools", items: ["Git", "Docker", "AWS", "Figma", "Jest"] }
+  {
+    category: "Frontend",
+    items: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Next.js"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express", "PostgreSQL", "Firebase", "Redis"],
+  },
+  { category: "Tools", items: ["Git", "Docker", "AWS", "Figma", "Jest"] },
 ];
 
 const TechStack = () => {
@@ -20,7 +25,8 @@ const TechStack = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Tech Stack</h2>
           <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-            A curated list of technologies I use to build scalable and performant applications.
+            A curated list of technologies I use to build scalable and
+            performant applications.
           </p>
         </motion.div>
 
@@ -40,7 +46,7 @@ const TechStack = () => {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
-                  <span 
+                  <span
                     key={item}
                     className="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-full text-sm font-medium"
                   >

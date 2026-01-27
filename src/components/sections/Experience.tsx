@@ -1,26 +1,28 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Briefcase, Calendar } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
     role: "Senior Frontend Engineer",
     company: "Tech Corp",
     period: "2023 - Present",
-    description: "Leading the frontend team in building a next-gen SaaS platform. Improved performance by 40% and established a new design system."
+    description:
+      "Leading the frontend team in building a next-gen SaaS platform. Improved performance by 40% and established a new design system.",
   },
   {
     role: "Full Stack Developer",
     company: "StartUp Inc",
     period: "2021 - 2023",
-    description: "Developed and maintained multiple client-facing applications using React and Node.js. Implemented real-time features using WebSockets."
+    description:
+      "Developed and maintained multiple client-facing applications using React and Node.js. Implemented real-time features using WebSockets.",
   },
   {
     role: "Junior Web Developer",
     company: "Digital Agency",
     period: "2020 - 2021",
-    description: "Collaborated with designers to translate high-fidelity mockups into responsive web pages. Optimized legacy sites for better SEO."
-  }
+    description:
+      "Collaborated with designers to translate high-fidelity mockups into responsive web pages. Optimized legacy sites for better SEO.",
+  },
 ];
 
 const Experience = () => {
@@ -51,12 +53,17 @@ const Experience = () => {
             >
               {/* Timeline line for desktop */}
               <div className="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-zinc-200 dark:bg-zinc-800 -translate-x-1/2"></div>
-              
-              <div className={`md:flex items-center justify-between gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+
+              <div
+                className={`md:flex items-center justify-between gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
+              >
                 <div className="hidden md:block w-1/2"></div>
-                
+
                 <div className="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 border-4 border-white dark:border-zinc-950 flex items-center justify-center -translate-x-1/2 z-10">
-                  <Briefcase size={14} className="text-blue-600 dark:text-blue-400" />
+                  <Briefcase
+                    size={14}
+                    className="text-blue-600 dark:text-blue-400"
+                  />
                 </div>
 
                 <div className="md:w-1/2">
@@ -64,8 +71,12 @@ const Experience = () => {
                     <span className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 font-medium mb-2">
                       <Calendar size={14} /> {exp.period}
                     </span>
-                    <h3 className="text-xl font-bold mb-1 text-zinc-900 dark:text-white">{exp.role}</h3>
-                    <p className="text-zinc-500 dark:text-zinc-400 mb-3">{exp.company}</p>
+                    <h3 className="text-xl font-bold mb-1 text-zinc-900 dark:text-white">
+                      {exp.role}
+                    </h3>
+                    <p className="text-zinc-500 dark:text-zinc-400 mb-3">
+                      {exp.company}
+                    </p>
                     <p className="text-zinc-600 dark:text-zinc-300 text-sm leading-relaxed">
                       {exp.description}
                     </p>
