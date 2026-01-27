@@ -3,7 +3,7 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    role: "Senior Frontend Engineer",
+    role: "Web Developer",
     company: "Tech Corp",
     period: "2023 - Present",
     description:

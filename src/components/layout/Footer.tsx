@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react';
+import { Heart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,15 +7,30 @@ const Footer = () => {
         <p className="text-zinc-500 dark:text-zinc-500 text-sm">
           © {new Date().getFullYear()} Portfolio. All rights reserved.
         </p>
-        
+
         <p className="flex items-center gap-2 text-zinc-500 dark:text-zinc-500 text-sm">
-          Made with <Heart size={16} className="text-red-500 fill-red-500" /> using React & Tailwind
+          Made with <Heart size={16} className="text-red-500 fill-red-500" />
         </p>
-        
+
         <div className="flex gap-6">
-          <a href="#" className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">Twitter</a>
-          <a href="#" className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">GitHub</a>
-          <a href="#" className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">LinkedIn</a>
+          <a
+            href="#"
+            className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+          >
+            Twitter
+          </a>
+          <a
+            href="#"
+            className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+          >
+            GitHub
+          </a>
+          <a
+            href="#"
+            className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
     </footer>
