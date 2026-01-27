@@ -52,6 +52,9 @@ const Contact = () => {
                   <p className="text-zinc-600 dark:text-zinc-400">
                     +91 77362 88003
                   </p>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-500">
+                    Available: 10 AM – 10 PM IST (India)
+                  </p>
                 </div>
               </div>
 
