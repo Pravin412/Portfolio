@@ -17,7 +17,7 @@ const projects = [
   },
 ];
 
-const categories = ["All", "Frontend"];
+const categories = ["All"];
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");

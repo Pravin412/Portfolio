@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react";
+import { Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-sm uppercase tracking-wider text-blue-600 dark:text-cyan-400 font-semibold mb-4">
-              Front-End Developer | React.js | Next.js
+              Web Developer
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-zinc-900 dark:text-white leading-tight">
               Hi, I'm <br />
@@ -24,11 +24,11 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-lg">
-              Frontend-focused developer with hands-on experience building
-              scalable, high-performance web applications using React.js,
-              Next.js, and TypeScript.
+              Frontend developer passionate about crafting performant,
+              user-centric web applications using React, Next.js, and
+              TypeScript, with a strong focus on scalability and modern UI
+              practices.
             </p>
-
             <div className="flex flex-wrap gap-4">
               <a
                 href="/Pravin_Kumar_Frontend_Developer_Resume.pdf"
