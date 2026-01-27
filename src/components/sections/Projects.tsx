@@ -78,13 +78,9 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                     <a
-                      href={project.github}
-                      className="p-2 bg-white rounded-full hover:scale-110 transition-transform"
-                    >
-                      <Github size={20} className="text-zinc-900" />
-                    </a>
-                    <a
                       href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-2 bg-white rounded-full hover:scale-110 transition-transform"
                     >
                       <ExternalLink size={20} className="text-zinc-900" />
