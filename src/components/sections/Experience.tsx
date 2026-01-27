@@ -3,25 +3,18 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    role: "Web Developer",
-    company: "Tech Corp",
-    period: "2023 - Present",
+    role: "Front-End Developer",
+    company: "ITOI Technologies",
+    period: "Nov 2024 – Present",
     description:
-      "Leading the frontend team in building a next-gen SaaS platform. Improved performance by 40% and established a new design system.",
+      "Developed SEO-optimized and high-performance web applications using Next.js. Built reusable and accessible UI components with Tailwind CSS and shadcn/ui. Implemented efficient data fetching using TanStack Query and integrated REST APIs.",
   },
   {
-    role: "Full Stack Developer",
-    company: "StartUp Inc",
-    period: "2021 - 2023",
+    role: "XML Developer",
+    company: "Kanini Data Solutions",
+    period: "Sep 2024 – Oct 2024",
     description:
-      "Developed and maintained multiple client-facing applications using React and Node.js. Implemented real-time features using WebSockets.",
-  },
-  {
-    role: "Junior Web Developer",
-    company: "Digital Agency",
-    period: "2020 - 2021",
-    description:
-      "Collaborated with designers to translate high-fidelity mockups into responsive web pages. Optimized legacy sites for better SEO.",
+      "Converted and maintained structured XML content with high accuracy and consistency.",
   },
 ];
 

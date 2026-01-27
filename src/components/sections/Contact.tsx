@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Send } from "lucide-react";
+import { Mail, Send, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -13,8 +13,9 @@ const Contact = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-zinc-600 dark:text-zinc-400">
-            Have a project in mind or just want to say hi? I'd love to hear from
-            you.
+            I am currently open to freelance projects and full-time
+            opportunities. Let's discuss how I can contribute to your team or
+            bring your ideas to life.
           </p>
         </motion.div>
 
@@ -42,10 +43,34 @@ const Contact = () => {
                 </div>
               </div>
 
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-blue-600 dark:text-blue-400">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <p className="font-medium">Call Me</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">
+                    +91 77362 88003
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-blue-600 dark:text-blue-400">
+                  <MapPin size={24} />
+                </div>
+                <div>
+                  <p className="font-medium">Location</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">
+                    Nagercoil, Tamil Nadu
+                  </p>
+                </div>
+              </div>
+
               <div className="bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800">
                 <p className="text-zinc-600 dark:text-zinc-400 italic">
-                  "I'm currently available for freelance work and open to
-                  full-time opportunities."
+                  "Dedicated to delivering exceptional web experiences through
+                  clean code and user-centric design."
                 </p>
               </div>
             </div>

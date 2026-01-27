@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-white dark:bg-zinc-950 py-12 border-t border-zinc-100 dark:border-zinc-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <p className="text-zinc-500 dark:text-zinc-500 text-sm">
-          © {new Date().getFullYear()} Portfolio. All rights reserved.
+          © {new Date().getFullYear()} D. Pravin Kumar. All rights reserved.
         </p>
 
         <p className="flex items-center gap-2 text-zinc-500 dark:text-zinc-500 text-sm">
@@ -13,20 +13,16 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-6">
-          <a
-            href="#"
-            className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
-          >
-            Twitter
-          </a>
-          <a
+          {/* <a
             href="#"
             className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
           >
             GitHub
-          </a>
+          </a> */}
           <a
-            href="#"
+            href="https://www.linkedin.com/in/pravin-kumar-7846a0227"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
           >
             LinkedIn

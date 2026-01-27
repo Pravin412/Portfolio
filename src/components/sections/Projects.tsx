@@ -5,55 +5,19 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
-    category: "Full Stack",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    description:
-      "A comprehensive dashboard for managing products, orders, and analytics. Built with Next.js and featured real-time data visualization.",
-    tags: ["Next.js", "TypeScript", "Prisma", "TanStack Query"],
-    github: "#",
-    live: "#",
-  },
-  {
-    id: 2,
-    title: "AI Chat Application",
-    category: "AI/ML",
-    image:
-      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&q=80&w=800",
-    description:
-      "Real-time chat interface integrating OpenAI's GPT-4 API. Features include streaming responses, history management, and code syntax highlighting.",
-    tags: ["React", "OpenAI API", "Socket.io", "Tailwind"],
-    github: "#",
-    live: "#",
-  },
-  {
-    id: 3,
-    title: "Task Management App",
+    title: "Teledoctor",
     category: "Frontend",
-    image:
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=800",
-    description:
-      "A Trello-style simplified task manager with drag-and-drop functionality and local storage persistence.",
-    tags: ["React", "Redux Toolkit", "Beautiful DnD"],
-    github: "#",
-    live: "#",
-  },
-  {
-    id: 4,
-    title: "Health Tracking API",
-    category: "Backend",
     image:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
     description:
-      "RESTful API for tracking user health metrics containing authentication, rate limiting, and comprehensive documentation.",
-    tags: ["Node.js", "Express", "MongoDB", "Swagger"],
+      "A telemedicine platform frontend built with Next.js, featuring secure login and user-friendly interface for digital health services.",
+    tags: ["Next.js", "React", "Tailwind CSS"],
     github: "#",
-    live: "#",
+    live: "https://dev.teledoctor.life/login",
   },
 ];
 
-const categories = ["All", "Frontend", "Backend", "Full Stack", "AI/ML"];
+const categories = ["All", "Frontend"];
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");

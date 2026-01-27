@@ -1,16 +1,17 @@
-import  { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { title: 'About', href: '#about' },
-    { title: 'Tech', href: '#tech' },
-    { title: 'Experience', href: '#experience' },
-    { title: 'Projects', href: '#projects' },
-    { title: 'Contact', href: '#contact' },
+    { title: "About", href: "#about" },
+    { title: "Tech", href: "#tech" },
+    { title: "Experience", href: "#experience" },
+    { title: "Education", href: "#education" },
+    { title: "Projects", href: "#projects" },
+    { title: "Contact", href: "#contact" },
   ];
 
   return (
@@ -18,11 +19,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              Portfolio
+            <a
+              href="#"
+              className="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
+            >
+              Pravin Kumar
             </a>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {menuItems.map((item) => (
@@ -36,7 +40,7 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          
+
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -50,7 +54,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}

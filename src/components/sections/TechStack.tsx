@@ -2,14 +2,30 @@ import { motion } from "framer-motion";
 
 const skills = [
   {
-    category: "Frontend",
-    items: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Next.js"],
+    category: "Primary Frontend",
+    items: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript"],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express", "PostgreSQL", "Firebase", "Redis"],
+    category: "UI & Styling",
+    items: ["Tailwind CSS", "shadcn/ui", "Responsive Design", "Accessibility"],
   },
-  { category: "Tools", items: ["Git", "Docker", "AWS", "Figma", "Jest"] },
+  {
+    category: "State & Data",
+    items: [
+      "TanStack Query",
+      "REST API Integration",
+      "Performance Optimization",
+    ],
+  },
+  {
+    category: "Supporting",
+    items: ["Angular (Basic)", "NestJS (Basic)"],
+  },
+  {
+    category: "Databases",
+    items: ["SQL (Basic)", "Relational Database Fundamentals"],
+  },
+  { category: "Tools", items: ["Git", "GitHub", "Git Bash"] },
 ];
 
 const TechStack = () => {

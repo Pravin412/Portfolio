@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -15,41 +15,45 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-sm uppercase tracking-wider text-blue-600 dark:text-cyan-400 font-semibold mb-4">
-              Full Stack Developer
+              Front-End Developer | React.js | Next.js
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-zinc-900 dark:text-white leading-tight">
-              Building <br />
+              Hi, I'm <br />
               <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                Digital Experiences
+                D. Pravin Kumar
               </span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-lg">
-              I craft beautiful, high-performance web applications with modern
-              technologies. Passionate about clean code and user-centric design.
+              Frontend-focused developer with hands-on experience building
+              scalable, high-performance web applications using React.js,
+              Next.js, and TypeScript.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="#projects"
+                href="/Pravin_Kumar_Frontend_Developer_Resume.pdf"
+                download="Pravin_Kumar_Resume.pdf"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition-colors flex items-center gap-2"
               >
-                View Projects <ArrowRight size={20} />
+                Download Resume <Download size={20} />
               </a>
               <div className="flex gap-4 items-center">
-                <a
+                {/* <a
                   href="#"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-700 dark:text-zinc-300"
                 >
                   <Github size={20} />
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/pravin-kumar-7846a0227"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-700 dark:text-zinc-300"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:pravinkumar42001@gmail.com"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-700 dark:text-zinc-300"
                 >
                   <Mail size={20} />
