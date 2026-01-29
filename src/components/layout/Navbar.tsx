@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,10 +39,14 @@ const Navbar = () => {
                   {item.title}
                 </a>
               ))}
+              <div className="ml-4">
+                <ThemeToggle />
+              </div>
             </div>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-zinc-600 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-cyan-400 p-2"
