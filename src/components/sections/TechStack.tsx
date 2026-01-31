@@ -3,29 +3,62 @@ import { motion } from "framer-motion";
 const skills = [
   {
     category: "Primary Frontend",
-    items: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript"],
+    items: [
+      "React.js",
+      "Next.js",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Modern React Hooks",
+      "Component-based Architecture",
+      "Client-side Rendering (CSR) & SSR",
+    ],
   },
   {
     category: "UI & Styling",
-    items: ["Tailwind CSS", "shadcn/ui", "Responsive Design", "Accessibility"],
+    items: [
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Responsive Web Design",
+      "Accessibility (a11y) Basics",
+      "Modern UI Component Architecture",
+      "Cross-Browser Compatibility",
+    ],
   },
   {
     category: "State & Data",
     items: [
-      "TanStack Query",
+      "TanStack Query (React Query)",
+      "Server State Management",
       "REST API Integration",
+      "Client-side State Management",
+      "Optimistic Updates",
+      "Caching & Background Refetching",
       "Performance Optimization",
     ],
   },
   {
     category: "Supporting",
-    items: ["Angular (Basic)", "NestJS (Basic)"],
+    items: ["Angular (Basic)", "NestJS (Basic)", "Prisma ORM (Basic)"],
   },
   {
     category: "Databases",
-    items: ["SQL (Basic)", "Relational Database Fundamentals"],
+    items: [
+      "SQL (Basic)",
+      "Relational Database Fundamentals",
+      "PostgreSQL",
+      "MySQL",
+    ],
   },
-  { category: "Tools", items: ["Git", "GitHub", "Git Bash"] },
+  {
+    category: "Tools",
+    items: [
+      "Git (Version Control)",
+      "GitHub",
+      "Git Bash",
+      "VS Code",
+      "Google Antigravity (AI‑Powered IDE)",
+    ],
+  },
 ];
 
 const TechStack = () => {

@@ -15,15 +15,26 @@ const projects = [
     github: "#",
     live: "https://dev.teledoctor.life/login",
   },
+  {
+    id: 2,
+    title: "Church Management System",
+    category: "Frontend",
+    image: "/churchManagementImage.png",
+    description:
+      "A comprehensive management system for churches to handle memberships, events, and community outreach in one unified dashboard.",
+    tags: ["Angular", "Tailwind CSS"],
+    github: "#",
+    live: "https://church-management-demo.vercel.app",
+  },
 ];
 
-const categories = ["All"];
+const categories = ["Projects"];
 
 const Projects = () => {
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState("Projects");
 
   const filteredProjects = projects.filter(
-    (project) => filter === "All" || project.category === filter,
+    (project) => filter === "Projects" || project.category === filter,
   );
 
   return (
