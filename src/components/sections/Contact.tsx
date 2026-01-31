@@ -1,7 +1,29 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Send, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSend = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { name, message } = formData;
+    const subject = encodeURIComponent(`Portfolio Message from ${name}`);
+    const body = encodeURIComponent(message);
+    window.location.href = `mailto:pravinkumar42001@gmail.com?subject=${subject}&body=${body}`;
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
   return (
     <section id="contact" className="py-20 bg-white dark:bg-zinc-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,15 +108,19 @@ const Contact = () => {
             transition={{ delay: 0.4 }}
             className="bg-white dark:bg-zinc-900 p-8 rounded-3xl shadow-lg border border-zinc-100 dark:border-zinc-800"
           >
-            <form className="space-y-4">
+            <form onSubmit={handleSend} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium mb-1 text-zinc-700 dark:text-zinc-300">
                   Name
                 </label>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors"
-                  placeholder="Enter your name  "
+                  placeholder="Enter your name"
                 />
               </div>
               <div>
@@ -103,8 +129,12 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors"
-                  placeholder="Enter your email "
+                  placeholder="Enter your email"
                 />
               </div>
               <div>
@@ -112,13 +142,17 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border-transparent focus:border-blue-500 focus:bg-white dark:focus:bg-zinc-950 focus:ring-0 transition-colors resize-none"
                   placeholder="Tell me about your project..."
                 ></textarea>
               </div>
               <button
-                type="button"
+                type="submit"
                 className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
               >
                 Send Message <Send size={18} />

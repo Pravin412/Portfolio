@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: "Teledoctor",
-    category: "Frontend",
+    category: "Frontend / Partial Backend",
     image:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
     description:
