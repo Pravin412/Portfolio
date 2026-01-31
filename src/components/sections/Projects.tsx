@@ -24,7 +24,6 @@ const projects = [
       "A comprehensive management system for churches to handle memberships, events, and community outreach in one unified dashboard.",
     tags: ["Angular", "Tailwind CSS"],
     github: "#",
-    live: "https://church-management-demo.vercel.app",
   },
 ];
 
