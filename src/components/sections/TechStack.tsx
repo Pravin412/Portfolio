@@ -31,6 +31,7 @@ const skills = [
       "Server State Management",
       "REST API Integration",
       "Client-side State Management",
+      "Zustand",
       "Optimistic Updates",
       "Caching & Background Refetching",
       "Performance Optimization",
