@@ -6,17 +6,45 @@ const projects = [
   {
     id: 1,
     title: "Teledoctor",
-    category: "Frontend / Partial Backend",
+    category: "Full Stack (Frontend + Admin Panel)",
     image:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
     description:
       "A telemedicine platform frontend built with Next.js, featuring secure login and user-friendly interface for digital health services.",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+    tags: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Zustand",
+      "TanStack Query",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+    ],
     github: "#",
-    live: "https://dev.teledoctor.life/login",
+    live: "https://app.teledoctor.life/login",
   },
   {
     id: 2,
+    title: "GiveCharity",
+    category: "Frontend",
+    image: "/giveCharityImage.png",
+    description:
+      "A web-based fundraising platform designed to connect donors with individuals and causes in need. It supports campaign creation, secure online donations, and transparent fund tracking to ensure efficient and impactful contributions.",
+    tags: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Zustand",
+      "TanStack Query",
+    ],
+    github: "#",
+    live: "https://givecharity.softmc.org/",
+  },
+  {
+    id: 3,
     title: "Church Management System",
     category: "Frontend",
     image: "/churchManagementImage.png",
