@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Linkedin, Mail, Download } from "lucide-react";
+import { SITE_CONFIG } from "../../constants";
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-zinc-900 dark:text-white leading-tight">
               Hi, I'm <br />
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
                 D. Pravin Kumar
               </span>
             </h1>
@@ -53,7 +54,7 @@ const Hero = () => {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="mailto:pravinkumar42001@gmail.com"
+                  href={`mailto:${SITE_CONFIG.email}`}
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-700 dark:text-zinc-300"
                 >
                   <Mail size={20} />

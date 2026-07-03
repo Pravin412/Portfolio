@@ -39,16 +39,11 @@ const skills = [
   },
   {
     category: "Supporting",
-    items: ["Angular (Basic)", "NestJS (Basic)", "Prisma ORM (Basic)"],
+    items: ["Angular (Basic)", "NestJS ", "Prisma ORM "],
   },
   {
     category: "Databases",
-    items: [
-      "SQL (Basic)",
-      "Relational Database Fundamentals",
-      "PostgreSQL",
-      "MySQL",
-    ],
+    items: ["SQL", "Relational Database Fundamentals", "PostgreSQL", "MySQL"],
   },
   {
     category: "Tools",
@@ -91,7 +86,7 @@ const TechStack = () => {
               className="bg-white dark:bg-zinc-900 p-8 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow"
             >
               <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
-                <span className="w-8 h-1 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full"></span>
+                <span className="w-8 h-1 bg-linear-to-r from-blue-600 to-cyan-400 rounded-full"></span>
                 {group.category}
               </h3>
               <div className="flex flex-wrap gap-2">
