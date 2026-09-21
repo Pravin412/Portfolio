@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: "Teledoctor",
-    category: "Full Stack (Frontend + Admin Panel)",
+    category: "Full Stack",
     image:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
     description:
@@ -51,6 +51,26 @@ const projects = [
     description:
       "A comprehensive management system for churches to handle memberships, events, and community outreach in one unified dashboard.",
     tags: ["Angular", "Tailwind CSS"],
+    github: "#",
+  },
+  {
+    id: 4,
+    title: "SupportHub (Personal Project)",
+    category: "Full Stack",
+    image: "/supporthubChat.jpg",
+    description:
+      "An independent full-stack personal project serving as a centralized customer support and chatbot integration platform. Features an embeddable support chat widget, project-level roles, webhook-based bot integration, and real-time conversation updates.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "WebSockets",
+      "Webhooks",
+    ],
     github: "#",
   },
 ];
