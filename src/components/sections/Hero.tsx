@@ -25,12 +25,11 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-lg">
-              Full Stack Developer with a passion for building end-to-end web
-              applications. I work across the stack — designing responsive,
-              reusable frontend interfaces with React.js, Next.js, and
-              TypeScript, and building secure, scalable backend systems with
-              Node.js, NestJS, and PostgreSQL. I care about writing clean code,
-              solving real problems, and creating products that are fast,
+              I build responsive, end-to-end web applications using modern
+              technologies. My focus is on creating clean, scalable code with a
+              great user experience, working across the full stack from frontend
+              interfaces to backend systems. I enjoy solving real problems and
+              delivering products that are reliable, fast, and easy to use.
               reliable, and easy to use
             </p>
             <div className="flex flex-wrap gap-4">
