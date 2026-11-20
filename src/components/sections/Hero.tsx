@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { SITE_CONFIG } from "../../constants";
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-sm uppercase tracking-wider text-blue-600 dark:text-cyan-400 font-semibold mb-4">
-              Web Developer
+              Full Stack Developer · Nagercoil, Tamil Nadu
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-zinc-900 dark:text-white leading-tight">
               Hi, I'm <br />
@@ -25,12 +25,13 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-lg">
-              I build responsive, end-to-end web applications using modern
-              technologies. My focus is on creating clean, scalable code with a
-              great user experience, working across the full stack from frontend
-              interfaces to backend systems. I enjoy solving real problems and
-              delivering products that are reliable, fast, and easy to use.
-              reliable, and easy to use
+              Full Stack Developer with 2+ years of experience building
+              production web applications with React.js, Next.js, TypeScript,
+              NestJS, Prisma, and PostgreSQL. I have built a multi-portal
+              telemedicine platform with role-based access, real-time
+              communication, and Bluetooth medical-device integration, and I
+              work hands-on with LLM integration and MCP server development
+              for AI assistants.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -41,14 +42,18 @@ const Hero = () => {
                 Download Resume <Download size={20} />
               </a>
               <div className="flex gap-4 items-center">
-                {/* <a
-                  href="#"
+                <a
+                  href="https://github.com/Pravin412"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-700 dark:text-zinc-300"
                 >
                   <Github size={20} />
-                </a> */}
+                </a>
                 <a
                   href="https://www.linkedin.com/in/pravin-kumar-7846a0227"
+                  aria-label="LinkedIn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-700 dark:text-zinc-300"
@@ -57,6 +62,7 @@ const Hero = () => {
                 </a>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
+                  aria-label="Email"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-700 dark:text-zinc-300"
                 >
                   <Mail size={20} />
@@ -75,7 +81,7 @@ const Hero = () => {
             <div className="aspect-square rounded-2xl bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative border border-zinc-200 dark:border-zinc-700 shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1000"
-                alt="Developer workspace"
+                alt="Workspace of D. Pravin Kumar, Full Stack Developer"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -3,18 +3,23 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    role: "Front-End Developer",
+    role: "Software Developer",
     company: "ITOI Technologies",
     period: "Nov 2024 – Present",
-    description:
-      "Developed SEO-optimized and high-performance web applications using Next.js. Built reusable and accessible UI components with Tailwind CSS and shadcn/ui. Implemented efficient data fetching using TanStack Query and integrated REST APIs.",
+    points: [
+      "Deliver end-to-end features across Next.js frontends and NestJS, Prisma, and PostgreSQL backends for healthcare, fundraising, and management products.",
+      "Contributed to a centralized AI assistant integrated through MCP that answers user queries and performs in-app actions; built MCP server connections and permission controls for secure tool access.",
+      "Improved backend performance with asynchronous caching and memoization, and used database transactions to keep multi-step workflows consistent.",
+      "Participate in code reviews and resolve production issues across frontend and backend.",
+    ],
   },
   {
     role: "XML Developer",
     company: "Kanini Data Solutions",
     period: "Sep 2024 – Oct 2024",
-    description:
-      "Converted and maintained structured XML content with high accuracy and consistency.",
+    points: [
+      "Validated and maintained structured XML content against defined quality and formatting standards.",
+    ],
   },
 ];
 
@@ -70,9 +75,11 @@ const Experience = () => {
                     <p className="text-zinc-500 dark:text-zinc-400 mb-3">
                       {exp.company}
                     </p>
-                    <p className="text-zinc-600 dark:text-zinc-300 text-sm leading-relaxed">
-                      {exp.description}
-                    </p>
+                    <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-300 text-sm leading-relaxed">
+                      {exp.points.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>

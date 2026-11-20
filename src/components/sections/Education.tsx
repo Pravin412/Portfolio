@@ -1,21 +1,25 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap, Award, Download } from "lucide-react";
 
 const education = [
   {
     degree: "B.E. Computer Science and Engineering",
-    institution: "MET Engineering College",
+    institution: "MET Engineering College (Anna University), Nagercoil",
     period: "2024",
-    description:
-      "Graduated with a focus on core computer science fundamentals.",
+    description: "CGPA: 7.61",
   },
 ];
 
-const certifications = [
-  "JavaScript Fundamentals (Great Learning)",
-  "Front-End Web Development (Coursera)",
-  "Responsive Web Design (Coursera)",
-  "UI/UX Design Fundamentals (Coursera)",
+const certifications: { name: string; file?: string }[] = [
+  {
+    name: "Claude Code 101 (Anthropic)",
+    file: "/certificates/Claude_Code_101_Anthropic.pdf",
+  },
+  {
+    name: "Introduction to Generative AI (Google Cloud · Coursera)",
+    file: "/certificates/Introduction_to_Generative_AI_Coursera.pdf",
+  },
+  { name: "UI/UX Design Fundamentals (Coursera)" },
 ];
 
 const Education = () => {
@@ -61,6 +65,9 @@ const Education = () => {
                       <p className="text-zinc-600 dark:text-zinc-400">
                         {edu.institution}
                       </p>
+                      <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+                        {edu.description}
+                      </p>
                     </div>
                     <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
                       {edu.period}
@@ -88,9 +95,20 @@ const Education = () => {
                   className="bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm flex items-center gap-3"
                 >
                   <div className="w-2 h-2 rounded-full bg-blue-600"></div>
-                  <span className="text-zinc-700 dark:text-zinc-300 font-medium">
-                    {cert}
+                  <span className="flex-1 text-zinc-700 dark:text-zinc-300 font-medium">
+                    {cert.name}
                   </span>
+                  {cert.file && (
+                    <a
+                      href={cert.file}
+                      download
+                      aria-label={`Download ${cert.name} certificate`}
+                      title="Download certificate"
+                      className="p-2 rounded-full text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors"
+                    >
+                      <Download size={18} />
+                    </a>
+                  )}
                 </motion.div>
               ))}
             </div>
